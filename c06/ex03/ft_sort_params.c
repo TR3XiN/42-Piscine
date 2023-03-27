@@ -1,30 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_sort_params.c.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: frodrige <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/21 18:15:23 by frodrige          #+#    #+#             */
-/*   Updated: 2023/03/21 18:15:24 by frodrige         ###   ########.fr       */
+/*   Created: 2023/03/27 13:55:14 by frodrige          #+#    #+#             */
+/*   Updated: 2023/03/27 13:55:15 by frodrige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+#include<unistd.h>
+int main()
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
-		str++;
-	}
-}
-
-int	main(void)
-{
-	ft_putstr("O gato amarelo\n");
+    
 }

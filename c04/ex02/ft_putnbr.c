@@ -20,31 +20,33 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	if (nb == -2147483648)
-	{
-		ft_putchar('-');
-		nb = 147483648;
-	}
+	long int	n;
+
+	n = nb;
 	if (nb < 0)
 	{
 		ft_putchar('-');
-		nb *= -1;
+		n = -n;
 	}
-	if (nb >= 10)
+	if (n < 10)
 	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		ft_putchar(n + '0');
 	}
 	else
 	{
-		ft_putchar(nb + 48);
+		ft_putnbr(n / 10);
+		ft_putchar(n % 10 + '0');
 	}
 }
 
 /*int	main(void)
 {
 	ft_putnbr(20);
+	write(1, "\n", 1);
 	ft_putnbr(-2334);
+	write(1, "\n", 1);
 	ft_putnbr(0);
-	ft_putnbr("A");
+	write(1, "\n", 1);
+	ft_putnbr(21312323);
+	write(1, "\n", 1);
 }*/
