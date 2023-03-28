@@ -12,20 +12,20 @@
 
 #include <unistd.h>
 
-void ft_str(char *str)
+void	ft_str(char *str)
 {
-    while(*str != '\0')
-    {
-        write(1, str++, 1);
-    }
-    write(1, "\n", 1);
+	while (*str != '\0')
+	{
+		write(1, str++, 1);
+	}
+	write(1, "\n", 1);
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-    while (argc > 1)
-        {
-            ft_str(argv[argc - 1]);
-            argc--;
-        }
+	while (argc > 1)
+	{
+		ft_str(argv[argc - 1]);
+		argc--;
+	}
 }

@@ -30,7 +30,7 @@ int ft_sqrt(int nb)
 }
 int main(void)
 {
-    int n1 = 48;
+    int n1 = 49;
 
     printf("%d", ft_sqrt(n1));
 }
