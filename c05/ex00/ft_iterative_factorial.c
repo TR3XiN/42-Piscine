@@ -6,7 +6,7 @@
 /*   By: frodrige <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/23 12:37:08 by frodrige          #+#    #+#             */
-/*   Updated: 2023/03/23 12:37:10 by frodrige         ###   ########.fr       */
+/*   Updated: 2023/03/29 19:23:47 by frodrige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-int     ft_iterative_factorial(int nb)
+
+int	ft_iterative_factorial(int nb)
 {
-	int     res;
-	
+	int	res;
+
 	res = 1;
 	if (nb < 0)
 	{
 		return (0);
 	}
-	else if (nb <= 1) 
+	else if (nb == 1 || nb == 0)
 	{
-		write(1, "Resultado igual a 1\n", 20);
+		return (1);
 	}
-	while(nb > 0)
+	while (nb > 0)
 	{
 		res = res * nb--;
 	}

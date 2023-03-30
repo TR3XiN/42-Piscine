@@ -13,24 +13,24 @@
 #include <unistd.h>
 #include <stdio.h>
 
-int ft_sqrt(int nb)
+int	ft_sqrt(int nb)
 {
-    long int i; //Index
-    long int ir; //Index Result
+	long int	i;
+	long int	ir;	
 
-    i = 0;
-    ir = nb;
-    while((i * i) <= ir)
-    {
-        if((i * i) == ir)
-            return (i);
-        i++;
-    }
-    return (0);
+	i = 0;
+	ir = nb;
+	while ((i * i) <= ir)
+	{
+		if ((i * i) == ir)
+			return (i);
+		i++;
+	}
+	return (0);
 }
-int main(void)
+/*int main(void)
 {
     int n1 = 49;
 
     printf("%d", ft_sqrt(n1));
-}
+}*/

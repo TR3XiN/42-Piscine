@@ -14,23 +14,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int ft_recursive_power(int nb, int power)
+int	ft_recursive_power(int nb, int power)
 {
-    int i;
+	int	i;
 
-    i = nb;
-    if (power == 0)
-        return (1);
-    if (power < 0)
-        return (0);
-    while (power > 1)
-        return (i * ft_recursive_power(i, power - 1));
+	i = nb;
+	if (power == 0)
+		return (1);
+	if (power < 0)
+		return (0);
+	return (i * ft_recursive_power(i, power - 1));
 }
 
-int main(int argc, char **argv)
+/*int main(int argc, char **argv)
 {
     if(argc == 3)
         printf("%d\n", ft_recursive_power(atoi(argv[1]), atoi(argv[2])));
     else
         printf("Error 404\n");
-}
+}*/
